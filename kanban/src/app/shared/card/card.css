@@ -1,0 +1,6 @@
+.card-body {
+  min-height: 200px;
+  max-height: 555px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}

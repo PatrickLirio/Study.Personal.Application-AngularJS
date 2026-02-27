@@ -1,12 +1,15 @@
 <div class="card shadow-sm rounded-4 p-3 w-100">
   <!-- Header -->
   <div class="d-flex justify-content-between align-items-center mb-3">
-    <h5 class="fw-bold mb-0">{{ icon }} {{ title }}</h5>
+    <h4 class="fw-bold mb-0">{{ icon }} {{ title }}</h4>
     <span class="badge bg-light text-dark border">{{ total }} Total</span>
   </div>
-
   <!-- Add Task Button -->
-  <button class="btn text-white rounded-pill mb-4" [ngStyle]="{ 'background-color': buttonColor }">
+  <!-- <button class="btn text-white rounded-pill mb-4" [ngStyle]="{ 'background-color': buttonColor }">
     + Add New Task
-  </button>
+  </button> -->
+
+  <div class="card-body overflow-auto">
+    <ng-content />
+  </div>
 </div>

@@ -1,0 +1,16 @@
+app-stages {
+  display: block;
+  height: 100%;
+}
+
+.container-stages {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+.border-container {
+  height: 100%;
+  overflow: hidden;
+}
