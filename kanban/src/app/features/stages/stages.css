@@ -8,9 +8,40 @@ app-stages {
   display: flex;
   justify-content: center;
   padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .border-container {
   height: 100%;
   overflow: hidden;
+  width: 95%;
+}
+
+@media (max-width: 1200px) {
+  .border-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .stage-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .stage-columns {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .container-stages {
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
 }

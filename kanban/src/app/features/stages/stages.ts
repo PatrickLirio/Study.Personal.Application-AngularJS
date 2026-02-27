@@ -8,6 +8,6 @@ import { DoneComponent } from './done/done';
   selector: 'app-stages',
   imports: [ToDoComponent, ReviewComponent, InProgressComponent, DoneComponent],
   templateUrl: './stages.html',
-  styleUrl: './stages.css',
+  styleUrls: ['./stages.css'],
 })
 export class StagesComponent {}
