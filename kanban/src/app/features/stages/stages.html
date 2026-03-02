@@ -10,13 +10,15 @@
         <div class="col-auto">
           <input
             type="text"
-            class="fs-5 fw-bold rounded-4 p-1 m-1"
+            class="fs-5 fw-bold rounded-3 p-1 m-1"
             style="width: 33rem"
             placeholder="Search Tasks..."
           />
         </div>
         <div class="col-auto align-items-center d-flex">
-          <button class="btn btn-primary rounded-4 px-5">+ Add New Task</button>
+          <button class="btn btn-primary rounded-3 px-5" (click)="openTaskModal()">
+            + Add New Task
+          </button>
         </div>
       </div>
     </div>
