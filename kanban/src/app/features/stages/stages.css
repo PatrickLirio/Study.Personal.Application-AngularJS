@@ -8,17 +8,17 @@ app-stages {
   display: flex;
   justify-content: center;
   padding-top: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  /* padding-left: 1rem;
+  padding-right: 1rem; */
 }
 
 .border-container {
   height: 100%;
   overflow: hidden;
-  width: 95%;
+  /* width: 95%; */
 }
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
   .border-container {
     width: 100%;
   }
@@ -30,9 +30,9 @@ app-stages {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
   }
-}
+} */
 
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
   .stage-columns {
     display: grid;
     grid-template-columns: 1fr;
@@ -44,4 +44,4 @@ app-stages {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
-}
+} */
