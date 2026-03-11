@@ -5,6 +5,7 @@ import { InProgressComponent } from './in-progress/in-progress';
 import { DoneComponent } from './done/done';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { TaskItemModalComponent } from '../../shared/task-item-modal/task-item-modal';
+import { TaskService } from '../../core/services/task.service';
 
 @Component({
   selector: 'app-stages',
@@ -13,7 +14,10 @@ import { TaskItemModalComponent } from '../../shared/task-item-modal/task-item-m
   styleUrls: ['./stages.css'],
 })
 export class StagesComponent {
-  constructor(private modalService: NgbModal) {}
+  constructor(
+    private taskService: TaskService,
+    private modalService: NgbModal,
+  ) {}
 
   openTaskModal() {
     const modalRef = this.modalService.open(TaskItemModalComponent, {
